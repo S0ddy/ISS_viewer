@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/iss.js"></script>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/iss.css">
+
+    <title>ISS Viewer</title>
+  </head>
+  <body>
+    <div class = "container gudi">
+      <div class = "row aboveTime">
+        <div class = "col-3 time">
+          <b id = "hours"></b>:<b id = "minutes"></b>
+          <b id = "day"></b>
+        </div>
+        <div class = "col-9 located">
+          ISS is now located at: <i>longitutde: </i><b id = "longitude">50</b><i> latitude: </i><b id = "latitude">40</b>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-3">
+          <div class = "row" >
+            <div class="col-9 abovePeople">
+            People on the ISS:
+            </div>
+          </div>
+          <div class = "row" id = "people">
+          </div>
+          <div class="col-10 aboveTotal" >
+            <hr>Total people on the ISS: <p id="total"></p>
+          </div>
+        </div>
+        <div class = "col-9" id = "map"></div>
+    </div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxZ529ALlbPETvA7IoRttmRGzHBuch77I&callback=initMap">
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  </body>
+</html>

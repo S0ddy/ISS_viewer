@@ -1,0 +1,50 @@
+
+body {
+    background-image: url(../pictures/background.png); 
+    background-attachment: fixed; 
+ }
+
+.aboveTime	{
+	padding: 20px;
+}
+
+.located	{
+	font-size: 20px;
+	text-align: center;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.abovePeople	{
+	text-align: center;
+	padding-top: 15px;
+}
+
+#people	{
+	margin-top: 10px;
+}
+
+.name	{
+	border: 2px solid black; /* Параметры границы */
+    /*background: #fc3; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 6px;
+    border-radius: 20px;
+}
+
+.aboveTotal	{
+	font-size: 15px;
+}
+
+#total	{
+	text-align: center;
+	font-size: 40px;
+}
+
+.gudi	{
+	font-family: 'Gugi', cursive;
+}
